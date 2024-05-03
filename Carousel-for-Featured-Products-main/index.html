@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet">
+
+
+    <script src="script.js" defer></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+
+  <header>
+
+  
+    <div class="logo">
+      <img src="images/logo.jpg">
+      Products carousel
+    </div> 
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="index.html">Bags</a>
+        <a href="shoe.html">Shoes</a>
+      
+</header>
+
+
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/pro1.jpg" class="d-block w-100" style="height: 610px;" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/pro2.jpg" class="d-block w-100" style="height: 610px;" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/pro3.jpg" class="d-block w-100" style="height: 610px;" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/pro4.jpg" class="d-block w-100" style="height: 610px;" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/pro5.jpg" class="d-block w-100" style="height: 610px;" alt="...">
+          </div>
+        
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <div class="content">
+        <div style="display: grid; position: relative;">
+            <section class = "slider" >
+                <div class="card">
+                    <img src="images/pro6.jpg" draggable="false" />
+                    <h2>Brown leather <br> handbag</h2>
+                    <span>Rs 259.99</span>
+                    <button class="btn btn-primary">Add to cart</button>
+                </div>
+                <div class="card">
+                    <img src="images/pr.jpg" draggable="false" />
+                    <h2>Red leather <br> handbag</h2>
+                    <span>Rs 349.99</span>
+                    <button class="btn btn-primary">Add to cart</button>
+                </div>
+                <div class="card">
+                    <img src="images/pro7.jpg" draggable="false" />
+                    <h2>Brown leather <br> Sling Bag</h2>
+                    <span>Rs 569.99</span>
+                    <button class="btn btn-primary">Add to cart</button>
+                </div>
+                <div class="card">
+                    <img src="images/pro8.jpg" draggable="false" />
+                    <h2>Blue and black <br> leather handbag </h2>
+                    <span>Rs 349.99</span>
+                    <button class="btn btn-primary">Add to cart</button>
+                </div>
+                <div class="card">
+                  <img src="images/pro9.jpg" draggable="false" />
+                  <h2>Cream leather <br> handbag</h2>
+                  <span>Rs 769.99</span>
+                  <button class="btn btn-primary">Add to cart</button>
+              </div>
+              <div class="card">
+                  <img src="images/pro10.jpg" draggable="false" />
+                  <h2>Black michael kors <br> tote bag</h2>
+                  <span>Rs 989.99</span>
+                  <button class="btn btn-primary">Add to cart</button>
+              </div>
+              <div class="card">
+                  <img src="images/pro11.jpg" draggable="false" />
+                  <h2>Black leather <br> handbag</h2>
+                  <span>Rs 479.99</span>
+                  <button class="btn btn-primary">Add to cart</button>
+              </div>
+              <div class="card">
+                  <img src="images/pro12.jpg" draggable="false" />
+                  <h2>Cream leather <br> handbag</h2>
+                  <span>Rs 679.99</span>
+                  <button class="btn btn-primary">Add to cart</button>
+                </div>
+            </section>
+            <div class="dots"></div>
+        </div>
+    </div>
+
+      <section class="footer">
+
+        <div class="share">
+            <a href="#" class="butn">facebook</a>
+            <a href="#" class="butn">twitter</a>
+            <a href="#" class="butn">instagram</a>
+         
+        </div>
+        <h1 class="credit"> created by <span> AMAN </span> | All rights reserved! </h1>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,302 @@
+img {
+
+    height: 28px;
+  }
+
+  :root {
+    --red: #ff3838;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+*::selection {
+    background: var(--red);
+    color: #fff;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+body {
+    background: #f7f7f7;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 1rem;
+    color: #666;
+}
+
+.heading span {
+    color: var(--red);
+}
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 1rem 9%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+ .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #666;
+    text-decoration: none;
+
+  }
+
+div .logo {
+    padding-right: .5rem;
+    color: var(--red);
+ 
+  }
+
+header .navbar a {
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: #666;
+    text-decoration: none;
+
+  }
+
+header .navbar a:hover {
+    color: var(--red);
+    text-decoration: none;
+
+  }
+
+#menu-bar {
+    font-size: 3rem;
+    cursor: pointer;
+    color: #666;
+    border: .1rem solid #666;
+    border-radius: .3rem;
+    padding: .5rem 1.5rem;
+    display: none;
+}
+
+
+
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.btn{
+  padding: 15px 40px;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-primary{
+  background-color: #007fc8;
+  color: #fff;
+}
+
+.btn-primary:hover{
+  background-color: #004e7a;
+}
+
+.slider{
+  display: flex;
+  max-width: 1100px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+.slider.dragging{
+  cursor: grab;
+  scroll-behavior: auto;
+}
+
+.slider.dragging .card{
+  pointer-events: none;
+}
+
+.slider .card{
+  background-color: #ebebeb;
+  text-align: center;
+  padding: 20px 0;
+  border-radius: 20px;
+  font-family: Roboto, 'Times New Roman';
+  user-select: none;
+  margin-left: 14px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 24%;
+}
+
+.slider .card:first-child{
+  margin-left: 0px;
+}
+
+.card img{
+  width: 202px;
+  padding-left: 15px;
+  height: 197px;
+}
+
+.card h2{
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.card span{
+  display: block;
+  color: #606d78;
+}
+
+.card button{
+  margin-top: 40px;
+  width: 165px;
+  margin: 25px;
+ font-size: 15px;
+}
+
+.dots{
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  width: max-content;
+}
+
+.dots span{
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  background-color: #D6D6D6;
+  display: inline-block;
+  margin-top: 25px;
+}
+
+.dots span:hover{
+  background-color: #869791;
+}
+
+.dots span.active{
+  background-color: #869791;
+}
+
+@media screen and (max-width: 900px) {
+  .slider .card{
+      flex-basis: 32%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .slider .card{
+      flex-basis: 54%;
+  }
+}
+
+
+.footer {
+  background: white;
+  text-align: center;
+}
+
+.footer .share {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.butn {
+    display: inline-block;
+    padding: .8rem 3rem;
+    border: .2rem solid var(--red);
+    color: var(--red);
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: 1rem;
+ text-decoration: none;
+  }
+
+.butn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--red);
+    transition: .3s linear;
+    z-index: -1;
+}
+
+.butn:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.butn:hover {
+    color: #fff;
+}
+ 
+.footer .credit {
+  padding: 2.5rem 1rem;
+  color: #fff;
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+.footer .credit span {
+  color: var(--red);
+}
+
+#scroll-top {
+  position: fixed;
+  top: -120%;
+  right: 2rem;
+  padding: .5rem 1.5rem;
+  font-size: 4rem;
+  background: var(--red);
+  color: #fff;
+  border-radius: .5rem;
+  transition: 1s linear;
+  z-index: 1000;
+}
+
+#scroll-top.active {
+  top: calc(100% - 12rem)
+}
+
